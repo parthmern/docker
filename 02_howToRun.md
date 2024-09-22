@@ -31,3 +31,6 @@
 ### inspect image
 - inspecting image by `docker inspect node` 
 - u can see lot of details like os version, image version, 
+
+# harkirat notes
+- https://projects.100xdevs.com/tracks/docker-easy/docker-1
