@@ -42,7 +42,8 @@ CMD ["node", "index.js"]
 
 
 - then do `docker build -t gitexpress .` to build
-- to run `docker run -it --init -p 3000:3000 gitexpress`
+- to run `docker run -it --init -p 3000:3000 gitexpress`          
+- learn below about EXPOSE command similar as port mapping
 
 ## issue of cache
 
@@ -53,8 +54,23 @@ CMD ["node", "index.js"]
 ## how to set env variables
 
 - because we are not going to push .env file on github
-- `ENV PORT=3000` use this in your dokcer file 
+- `ENV PORT=3000` use this inside your dokcer file 
 - how to recheck it `docker run -it --init gitexpress /bin/sh` open shell and then `env` or `printenv <varName>` to recheck
 
 ## must turn off VPN/PROXY
 - because it gave me issue while installing npm ci under container
+
+
+## DOCKER EXPOSE
+```
+#inside Dockerfile
+
+#expose the particular port to random port
+EXPOSE 3000
+
+```
+
+- here i am exposing 3000 number port from container 
+- build container and now run this command with capital P `docker run -it --init -P gitexpress`
+- how to see it is exposed in which port number into your local machine to do this 
+- run `docker ps` it shows all running containers with all exposed port which shows that `0.0.0.0->5501 -> 3000` so here in hostmachine your local machine u can see 3000 port of your container with 5501
