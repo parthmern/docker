@@ -9,3 +9,10 @@
 
 - how to remove image `docker rmi <imageId>` or forcefully by `docker rmi <imageId> -f`
 - how to give tag name / repository name ` docker build -t mytagname .`;
+
+<br/>
+<br/>
+
+- how to run container in iterative mode live mode `docker run -it <imageName>`
+- while opening it in this mode when u press ctrl+c to close it or kill container you are not able to do it
+- to perform above thing use `docker run -it --init <imageName>`

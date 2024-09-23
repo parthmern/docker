@@ -3,8 +3,11 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req,res)=>{
+    console.log("PING: hitted home route");
     res.json({message: "ok"})
 })
-app.listen(3000, ()=>{
-    console.log("staring server");
+
+const PORT = 3000 ;
+app.listen(PORT, ()=>{
+    console.log(`starting server on ${PORT}`);
 })
