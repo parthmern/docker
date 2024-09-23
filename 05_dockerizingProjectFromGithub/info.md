@@ -2,7 +2,7 @@
 
 - here i have to find which OS my docker container is using 
 - i did `docker inspect <nodeWHICHISIMAGENAME>` which tell me "OS:linux"
-- or i open bash/shell in my container `docker run -it <image_name_or_id> /bin/sh` and then run command `cat /etc/os-release` for linux OR `systeminfo` for windows which gave me all details about OS
+- or i open bash/shell in my container `docker run -it <image_name_or_id> /bin/sh` or `docker run -it <image_name_or_id> sh` and then run command `cat /etc/os-release` for linux OR `systeminfo` for windows which gave me all details about OS
 
 <br/>
 
