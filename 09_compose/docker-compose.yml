@@ -1,7 +1,12 @@
 version: '3'
+networks:
+  micro-net:
+    driver: bridge
 services:
   api_gateway:
     build: ./api-gateway-service
+    networks:
+      - micro-net
     ports:
       - "3000:3000"
     volumes:
@@ -9,6 +14,8 @@ services:
       - ./api-node-modules:/developer/nodejs/node_bind_project/node_modules
   express_service:
     build: ./express-service
+    networks:
+      - micro-net
     ports:
       - "4000:4000"
     
