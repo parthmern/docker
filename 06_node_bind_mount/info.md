@@ -10,7 +10,7 @@
 - to solve this we can do bind mount with our local machine's working directory
 - first i did build image
 - then run it like `docker run -it --init -p 3002:3000 -v "${PWD}:/developer/nodejs/node_bind_project" <imageName>` 
-- or `docker run -it --init  -v "C:\Users\parth\Downloads\06_node_bind_mount\06_node_bind_mount:/developer/nodejs/node_bind_project" --name containernewname -p 3000:3000 vol`
+- or `docker run -it --init  -v "C:\Users\parth\Downloads\06_node_bind_mount\06_node_bind_mount:/developer/nodejs/node_bind_project" --name containernewname -p 3000:3000 vol`  (powershell)
 - imp stuff to know here PWD is path of your local machine's directory where you are working 
 - when u do some chnages in local machine it automatically reflects into the file of containers so nodemon automatically detects it so it is kind of development environment
 - vice versa when you do some changes in file of container it reflects to your localmachine file

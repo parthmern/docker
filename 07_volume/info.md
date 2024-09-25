@@ -39,3 +39,9 @@ Dockerfile  index.js  info.md  newFile.txt  node_modules  package-lock.json  pac
 <br/>
 
 - even in future we delete container, however volume should be there and that we can use 
+- **we are putting nodemodules all folder into the volume to make them similar everytimes**
+
+
+<br/>
+
+- we can also do this `docker run -v /path/on/host:/path/in/container -v my_volume:/app_data my_image`
