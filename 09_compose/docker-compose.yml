@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api_gateway:
+    build: ./api-gateway-service
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./api-gateway-service/:/developer/nodejs/node_bind_project
+      - ./api-node-modules:/developer/nodejs/node_bind_project/node_modules
+  express_service:
+    build: ./express-service
+    ports:
+      - "4000:4000"
+    
