@@ -16,3 +16,9 @@
 - how to run container in iterative mode live mode `docker run -it <imageName>`
 - while opening it in this mode when u press ctrl+c to close it or kill container you are not able to do it
 - to perform above thing use `docker run -it --init <imageName>`
+
+<br/>
+
+- here how to see docker running process/conntainer `docker ps`
+- to see all available docker container `docker container ls -a`
+- remove docker container `docker rm <containerId>`

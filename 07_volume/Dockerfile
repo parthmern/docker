@@ -2,7 +2,7 @@ FROM node
 
 WORKDIR /developer/volume
 
-COPY //d/Z_PARTH-CODES/docker .
+COPY . .
 
 RUN npm ci
 
