@@ -11,6 +11,7 @@
 - When simple docker commands and when compose file ?
 - docker is used when a single container should run temporarily
 - docker-compose is used when multiple containers should be orchestrated (sharing network interfaces or volumes/mounts); or when there is just too many arguments that I would need to “document” in non-volatile memory.
+- In short, If you want to run 2 Dockerfiles together (say, backend + frontend, or app + db), then you use Docker Compose.
 
 
 
