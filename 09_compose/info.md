@@ -7,6 +7,12 @@
 
 - why? generally when you have to start two docker container with same file
 - means two microservice with same file
+- Docker Compose is a tool for defining and running multi-container applications. It is the key to unlocking a streamlined and efficient development and deployment experience.
+- When simple docker commands and when compose file ?
+- docker is used when a single container should run temporarily
+- docker-compose is used when multiple containers should be orchestrated (sharing network interfaces or volumes/mounts); or when there is just too many arguments that I would need to “document” in non-volatile memory.
+
+
 
 <br/>
 
