@@ -1,3 +1,7 @@
+# latest notes
+
+- https://brazen-pantry-a23.notion.site/Docker-37ec49f9d7d6806c9945d99798d9f479#37ec49f9d7d680a78d4fd5d49318a84e
+
 # communication between docker containers | DOCKER NETWORK | BRIDGE | Bridge network driver
 
 - ![img](https://res.cloudinary.com/dncm3mid4/image/upload/v1727254378/githubreadme/zi2zji63cfydsuimzmj5.png)
@@ -17,13 +21,12 @@
 - running another docker container example `docker run -d --name db-container --network microservice-bridge postgres:latest`
 - now u do `docker inspect microservice-bridge`
 
-
 # process that i done
 
 - i have only 2 different node images (one which is express server/bindmount that i used during before lecture and another is pure nodejs server)
 - first container `docker run -it --init --name nodecontainer --network microservice-bridge node` (vanila nodejs)
 - second container `docker run -it --init --name volumecontainer --network microservice-bridge volumeimage` (express server)
-- now i do `docker inspect microservice-bridge` 
+- now i do `docker inspect microservice-bridge`
 
 ```
 "Containers": {
