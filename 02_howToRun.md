@@ -1,3 +1,7 @@
+## docker dee-mon and permission thing
+
+[![Screenshot-2026-06-13-101129.png](https://i.postimg.cc/x8MJ1NWc/Screenshot-2026-06-13-101129.png)](https://postimg.cc/K3cv9jc2)
+
 ## how to run image/ container
 
 - install image `docker pull node`
